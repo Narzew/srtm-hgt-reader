@@ -1,0 +1,7 @@
+*.bin
+*.exe
+*.hgt
+*.obj
+*.txt
+bin/
+obj/
