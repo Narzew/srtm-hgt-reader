@@ -49,7 +49,10 @@ void calculate_elevs(string outname){
             continue;
         } else {
             latlons[i][2] = srtmGetElevation(latlons[i][0], latlons[i][1]);
-            outfile << latlons[i][0] << "," << latlons[i][1] << "," << latlons[i][2] << "\n";
+            outfile.precision(14);
+            outfile <<latlons[i][0] << "," << latlons[i][1] << ",";
+            outfile.precision(6);
+            outfile << latlons[i][2] << "\n";
         }
     }
     outfile.close();
@@ -89,7 +92,7 @@ double distance(double lat1,double lon1,double lat2,double lon2)
  */
 
 int main(int argc, char *argv[]) {
-    setprecision(8);
+    cout.precision(8);
     string fname;
     string outname;
 

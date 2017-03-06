@@ -1,4 +1,4 @@
-## Elevations Reader
+# Elevations Reader
 Software to easily check all elevations from a file and save output to other file.
 Supports up to 10000 coordinates per file.
 ## Usage
