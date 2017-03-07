@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1488746400 source:d:\projekty\elevationsreader\srtmhgtreader.cpp
+1488914436 source:d:\projekty\elevationsreader\srtmhgtreader.cpp
 	<stdio.h>
 	<stdlib.h>
 	<stdint.h>
@@ -8,7 +8,7 @@
 
 1488742976 d:\projekty\elevationsreader\srtmhgtreader.h
 
-1488746416 source:d:\projekty\elevationsreader\main.cpp
+1488914328 source:d:\projekty\elevationsreader\main.cpp
 	<string>
 	<cmath>
 	<cstdlib>

@@ -107,12 +107,12 @@ void srtmReadPx(int y, int x, int* height){
 
 /** Returns interpolated height from four nearest points */
 float srtmGetElevation(float lat, float lon){
-    int latDec = (int)lat;
-    int lonDec = (int)lon;
+    int latDec = (int)floor(lat);
+    int lonDec = (int)floor(lon);
+    float secondsLat, secondsLon;
 
-    float secondsLat = (lat-latDec) * 60 * 60;
-    float secondsLon = (lon-lonDec) * 60 * 60;
-
+    secondsLat = (lat-latDec) * 60 * 60;
+    secondsLon = (lon-lonDec) * 60 * 60;
     srtmLoadTile(latDec, lonDec);
 
     //X coresponds to x/y values,
